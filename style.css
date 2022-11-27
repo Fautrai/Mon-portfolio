@@ -1,0 +1,105 @@
+body{
+    background-color: lightpink;
+}
+
+h1 {
+text-align: center;
+font-size: 80px;
+}
+
+nav{
+    background-color: rgb(109, 19, 74);
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+}
+
+.button{
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    color: rgb(255, 255, 255);
+    background-color:  rgb(109, 19, 74);
+    }
+.button:hover{
+    background-color: darkviolet;
+}
+    
+
+
+@media screen and (max-width: 470px){
+    nav{
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+li{ 
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+}   
+}
+
+li{
+    font-size: 30px;
+}
+
+
+
+
+
+.cube{
+    width:580px;
+    height:350px;
+    margin-bottom: 20px;
+}
+  
+.cube1{
+    background-color: deeppink;
+}
+
+.cube2{
+    background-color: aquamarine;
+}
+
+.cube3{
+    background-color: cyan;
+}
+
+.cube4{
+    background-color: deepskyblue;
+}
+
+.cube5{
+    background-color: lightcoral;
+}
+
+
+main:hover>.cube{
+    animation: 4s linear 0s alternate sun-rise;
+    transform: translateX(100);
+}
+
+
+@keyframes sun-rise {
+    from {
+      transform: translateY(110vh);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  Copy to Clipboard
+
+        section{
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
